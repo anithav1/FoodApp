@@ -37,7 +37,7 @@ import { ViewfeedbackComponent } from './admin/viewfeedback/viewfeedback.compone
 import { EmptycartComponent } from './user/emptycart/emptycart.component';
 import { ViewoneorderComponent } from './admin/viewoneorder/viewoneorder.component';
 import { ViewoneuserComponent } from './admin/viewoneuser/viewoneuser.component';
-
+import { MyLoggerModule } from 'my-logger';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +71,7 @@ import { ViewoneuserComponent } from './admin/viewoneuser/viewoneuser.component'
   ],
   imports: [
     BrowserModule,
+    MyLoggerModule,
     HttpClientModule,
     AppRoutingModule,
     AuthModule,
