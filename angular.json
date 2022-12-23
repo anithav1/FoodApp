@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "routing-demo": {
+    "FoodAppAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/routing-demo",
+            "outputPath": "dist/FoodAppAngular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -44,7 +44,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -67,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "routing-demo:build"
+            "browserTarget": "FoodAppAngular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "routing-demo:build:production"
+              "browserTarget": "FoodAppAngular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "routing-demo:build"
+            "browserTarget": "FoodAppAngular:build"
           }
         },
         "lint": {
@@ -98,11 +97,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "routing-demo:serve"
+            "devServerTarget": "FoodAppAngular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "routing-demo:serve:production"
+              "devServerTarget": "FoodAppAngular:serve:production"
             }
           }
         }
@@ -175,7 +174,7 @@
       }
     }
   },
-  "defaultProject": "foodappangular",
+  "defaultProject": "FoodAppAngular",
   "cli": {
     "analytics": false
   }
