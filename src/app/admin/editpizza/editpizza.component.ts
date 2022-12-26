@@ -1,9 +1,11 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm }   from '@angular/forms';
+
 import { Router } from '@angular/router';
 import { AdminService } from 'src/app/services/admin.service';
-
+import { FormsModule }   from '@angular/forms';
+import { NgModule }      from '@angular/core';
 @Component({
   selector: 'app-editpizza',
   templateUrl: './editpizza.component.html',

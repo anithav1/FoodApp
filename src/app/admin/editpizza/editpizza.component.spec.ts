@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgModule }      from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { EditpizzaComponent } from './editpizza.component';
 
 describe('EditpizzaComponent', () => {

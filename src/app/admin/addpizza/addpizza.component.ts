@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AdminService } from 'src/app/services/admin.service';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-addpizza',
   templateUrl: './addpizza.component.html',

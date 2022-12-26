@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }    from '@angular/forms';
 import {HttpClientModule,HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppRoutingModule ,routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import {AuthModule} from './auth/auth.module';
 import { ViewuserComponent } from './admin/viewuser/viewuser.component';
 import { AaComponent } from './aa/aa.component';
 import { AddpizzaComponent } from './admin/addpizza/addpizza.component';
-import { FormsModule } from '@angular/forms';
+
 import { ViewpizzaComponent } from './admin/viewpizza/viewpizza.component';
 import { EditpizzaComponent } from './admin/editpizza/editpizza.component';
 import { NavbarComponent } from './user/navbar/navbar.component';
@@ -37,7 +38,7 @@ import { ViewfeedbackComponent } from './admin/viewfeedback/viewfeedback.compone
 import { EmptycartComponent } from './user/emptycart/emptycart.component';
 import { ViewoneorderComponent } from './admin/viewoneorder/viewoneorder.component';
 import { ViewoneuserComponent } from './admin/viewoneuser/viewoneuser.component';
-import { MyLoggerModule } from 'my-logger';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +72,6 @@ import { MyLoggerModule } from 'my-logger';
   ],
   imports: [
     BrowserModule,
-    MyLoggerModule,
     HttpClientModule,
     AppRoutingModule,
     AuthModule,

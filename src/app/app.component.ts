@@ -1,8 +1,8 @@
-import { summaryFileName } from '@angular/compiler/src/aot/util';
 import { Component, OnInit } from '@angular/core';
+import { NgForm }   from '@angular/forms';
+
 import * as $ from 'jquery';
 // import * as AOS from 'aos';
-import { LoggerService } from 'my-logger';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { LoggerService } from 'my-logger';
   styleUrls: ['./app.component.css']
 })
 // export class AppComponent {
-  // title = 'FoodAppAngular';
+  // title = 'routing-demo';
   // ngOnInit()
   // {
   //   $(document).ready(function(){
@@ -20,20 +20,13 @@ import { LoggerService } from 'my-logger';
 // }
 
 
-export class AppComponent {
-  title = 'FoodAppAngular';
-
-  constructor(private loggerService: LoggerService)  {
-   this.loggerService.log('Hello world');
-  }
-
-
-    }
-
-
+export class AppComponent implements OnInit{
+  title = 'routing-demo';
+  ngOnInit()
+  {
     // $(document).ready(function(){
     //   alert("ok janu");
     // });
     // AOS.init();
-
-
+  }
+}
