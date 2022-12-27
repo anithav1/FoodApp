@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const path = require("path")
 const mongoose = require('mongoose')
 const url = 'mongodb+srv://anithav:anithav@cluster0.msc5chm.mongodb.net/Foodapp?retryWrites=true&w=majority'
 var bodyParser = require('body-parser')
@@ -44,4 +45,15 @@ app.use('/admin', adminRoutes)
 app.listen(PORT, () => {
     console.log(`Listing onnn port ${PORT}`);
 })
+
+
+app.use(express.static(path.join(__dirname, "./foodappangular/src")));
+app.get("*", function (_, res) {
+  res.sendFile(
+    path.join(__dirname, "./foodappangular/src/index.html"),
+    function (err) {
+      res.status(500).send(err);
+    }
+  );
+});
 
