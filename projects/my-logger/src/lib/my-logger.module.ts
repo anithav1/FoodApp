@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-
+import { MyLoggerComponent } from './my-logger.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [MyLoggerComponent],
   imports: [
   ],
-  exports: []
+  exports: [MyLoggerComponent]
 })
 export class MyLoggerModule { }

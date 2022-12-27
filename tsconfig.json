@@ -12,13 +12,15 @@
     "target": "es2015",
     "module": "es2020",
     "lib": [
+
       "es2018",
       "dom"
     ],
     "paths": {
       "my-logger": [
         "dist/my-logger/my-logger",
-        "dist/my-logger"
+        "dist/my-logger",
+
       ],
       "test": [
         "dist/test/test",

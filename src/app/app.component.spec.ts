@@ -8,8 +8,8 @@ describe('AppComponent', ()=> {
 
 
   })
-it('should have a tittle FoodAppAngular', () => {
-  expect(fixture.title).toEqual('FoodAppAngular');
+it('should have a tittle foodappangular', () => {
+  expect(fixture.title).toEqual('foodappangular');
 })
 
 })
