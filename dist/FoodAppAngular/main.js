@@ -2194,7 +2194,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // import * as AOS from 'aos';
 // export class AppComponent {
-// title = 'routing-demo';
+// title = 'foodappangular';
 // ngOnInit()
 // {
 //   $(document).ready(function(){
@@ -2204,7 +2204,7 @@ __webpack_require__.r(__webpack_exports__);
 // }
 class AppComponent {
     constructor() {
-        this.title = 'routing-demo';
+        this.title = 'foodappangular';
     }
     ngOnInit() {
         // $(document).ready(function(){

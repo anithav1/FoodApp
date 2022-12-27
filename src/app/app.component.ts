@@ -10,7 +10,7 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 // export class AppComponent {
-  // title = 'routing-demo';
+  // title = 'foodappangular';
   // ngOnInit()
   // {
   //   $(document).ready(function(){
@@ -21,7 +21,7 @@ import * as $ from 'jquery';
 
 
 export class AppComponent implements OnInit{
-  title = 'routing-demo';
+  title = 'foodappangular';
   ngOnInit()
   {
     // $(document).ready(function(){
