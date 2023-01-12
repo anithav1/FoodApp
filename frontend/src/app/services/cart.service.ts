@@ -16,8 +16,8 @@ export class CartService {
 
 
   addPizza(body:any) {
-   
-    return this.http.post('http://127.0.0.1:3000/addtocart', body, {
+
+    return this.http.post('http://localhost:3000/addtocart', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -25,7 +25,7 @@ export class CartService {
 
 
   deletePizza(body:any) {
-    return this.http.post('http://127.0.0.1:3000/deletefromcart', body, {
+    return this.http.post('http://localhost:3000/deletefromcart', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
