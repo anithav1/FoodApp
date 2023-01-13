@@ -3573,7 +3573,7 @@ class EditpizzaComponent {
                 console.log(res);
             }, (error) => {
                 if (error instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpErrorResponse"]) {
-                    this.router.navigate(['/login']);
+                    this.router.navigate(['/admin']);
                 }
                 console.log(error);
             });

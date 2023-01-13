@@ -113,7 +113,7 @@ export class EditpizzaComponent implements OnInit {
           if(error instanceof HttpErrorResponse)
           {
 
-              this.router.navigate(['/login'])
+              this.router.navigate(['/admin'])
 
           }
           console.log(error);
