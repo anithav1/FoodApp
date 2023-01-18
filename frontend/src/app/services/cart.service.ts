@@ -10,14 +10,14 @@ export class CartService {
 
   public avail:boolean = false;
   public msg:string="";
-  private baseUri: string = "http://localhost:3000";
+  private baseUri: string = "https://anidatabase.onrender.com";
   private headers = new HttpHeaders().set('Content-Type', 'application/json');
   constructor(private http: HttpClient, private router: Router) { }
 
 
   addPizza(body:any) {
 
-    return this.http.post('http://localhost:3000/addtocart', body, {
+    return this.http.post('https://anidatabase.onrender.com/addtocart', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
@@ -25,7 +25,7 @@ export class CartService {
 
 
   deletePizza(body:any) {
-    return this.http.post('http://localhost:3000/deletefromcart', body, {
+    return this.http.post('https://anidatabase.onrender.com/deletefromcart', body, {
       observe: 'body',
       headers: new HttpHeaders().append('Content-Type', 'application/json')
     });
